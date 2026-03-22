@@ -1,0 +1,6 @@
+@WebApiCineStar_HostAddress = http://localhost:5069
+
+GET {{WebApiCineStar_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

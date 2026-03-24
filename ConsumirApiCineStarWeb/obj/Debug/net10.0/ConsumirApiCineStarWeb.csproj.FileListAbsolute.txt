@@ -97,3 +97,4 @@ D:\tarea onpe y cinestar\WebApiCineStar\ConsumirApiCineStarWeb\obj\Debug\net10.0
 D:\tarea onpe y cinestar\WebApiCineStar\ConsumirApiCineStarWeb\obj\Debug\net10.0\ConsumirApiCineStarWeb.pdb
 D:\tarea onpe y cinestar\WebApiCineStar\ConsumirApiCineStarWeb\obj\Debug\net10.0\ConsumirApiCineStarWeb.genruntimeconfig.cache
 D:\tarea onpe y cinestar\WebApiCineStar\ConsumirApiCineStarWeb\obj\Debug\net10.0\ref\ConsumirApiCineStarWeb.dll
+D:\tarea onpe y cinestar\WebApiCineStar\ConsumirApiCineStarWeb\obj\Debug\net10.0\ConsumirApiCineStarWeb.sourcelink.json

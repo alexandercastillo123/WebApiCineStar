@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebApiCineStar")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da89236b2ccd7a5537b4fc5f0426a990c2e63f52")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebApiCineStar")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebApiCineStar")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

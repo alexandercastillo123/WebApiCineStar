@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "CineStarWeb.Controllers.ApiController",
+    "ContainingType": "WebApiCineStar.Controllers.CineController",
     "Method": "GetCine",
-    "RelativePath": "api/Api/cine/{id}",
+    "RelativePath": "api/Cine/verCine/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -13,42 +13,22 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "WebApiCineStar.Models.CineViewModel",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "CineStarWeb.Controllers.ApiController",
+    "ContainingType": "WebApiCineStar.Controllers.CineController",
     "Method": "GetCines",
-    "RelativePath": "api/Api/cines",
+    "RelativePath": "api/Cine/verCines",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[WebApiCineStar.Models.Cine, WebApiCineStar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "CineStarWeb.Controllers.ApiController",
+    "ContainingType": "WebApiCineStar.Controllers.PeliculaController",
     "Method": "GetPelicula",
-    "RelativePath": "api/Api/pelicula/{id}",
+    "RelativePath": "api/Pelicula/verPelicula/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -59,22 +39,12 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "WebApiCineStar.Models.Pelicula",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "CineStarWeb.Controllers.ApiController",
+    "ContainingType": "WebApiCineStar.Controllers.PeliculaController",
     "Method": "GetPeliculas",
-    "RelativePath": "api/Api/peliculas/{id}",
+    "RelativePath": "api/Pelicula/verPeliculas/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -85,16 +55,6 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[WebApiCineStar.Models.Pelicula, WebApiCineStar, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   }
 ]

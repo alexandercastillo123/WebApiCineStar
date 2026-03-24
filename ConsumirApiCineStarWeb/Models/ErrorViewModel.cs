@@ -1,4 +1,6 @@
-namespace ConsumirApiCineStar.Models
+using System;
+
+namespace ConsumirApiCineStarWeb.Models
 {
     public class ErrorViewModel
     {

@@ -3,36 +3,36 @@
   "WorkspaceRootPath": "D:\\tarea onpe y cinestar\\WebApiCineStar\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{669E54A8-A211-D27F-D201-0F519AC8D680}|ConsumirApiCineStarWeb\\ConsumirApiCineStarWeb.csproj|d:\\tarea onpe y cinestar\\webapicinestar\\consumirapicinestarweb\\views\\home\\peliculas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{669E54A8-A211-D27F-D201-0F519AC8D680}|ConsumirApiCineStarWeb\\ConsumirApiCineStarWeb.csproj|solutionrelative:consumirapicinestarweb\\views\\home\\peliculas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B6251733-FB67-B163-3347-84D69FC72936}|WebApiCineStar\\WebApiCineStar.csproj|d:\\tarea onpe y cinestar\\webapicinestar\\webapicinestar\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6251733-FB67-B163-3347-84D69FC72936}|WebApiCineStar\\WebApiCineStar.csproj|solutionrelative:webapicinestar\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B6251733-FB67-B163-3347-84D69FC72936}|WebApiCineStar\\WebApiCineStar.csproj|d:\\tarea onpe y cinestar\\webapicinestar\\webapicinestar\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6251733-FB67-B163-3347-84D69FC72936}|WebApiCineStar\\WebApiCineStar.csproj|solutionrelative:webapicinestar\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B6251733-FB67-B163-3347-84D69FC72936}|WebApiCineStar\\WebApiCineStar.csproj|d:\\tarea onpe y cinestar\\webapicinestar\\webapicinestar\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B6251733-FB67-B163-3347-84D69FC72936}|WebApiCineStar\\WebApiCineStar.csproj|solutionrelative:webapicinestar\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{669E54A8-A211-D27F-D201-0F519AC8D680}|ConsumirApiCineStarWeb\\ConsumirApiCineStarWeb.csproj|d:\\tarea onpe y cinestar\\webapicinestar\\consumirapicinestarweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{669E54A8-A211-D27F-D201-0F519AC8D680}|ConsumirApiCineStarWeb\\ConsumirApiCineStarWeb.csproj|solutionrelative:consumirapicinestarweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B6251733-FB67-B163-3347-84D69FC72936}|WebApiCineStar\\WebApiCineStar.csproj|d:\\tarea onpe y cinestar\\webapicinestar\\webapicinestar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B6251733-FB67-B163-3347-84D69FC72936}|WebApiCineStar\\WebApiCineStar.csproj|solutionrelative:webapicinestar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B6251733-FB67-B163-3347-84D69FC72936}|WebApiCineStar\\WebApiCineStar.csproj|d:\\tarea onpe y cinestar\\webapicinestar\\webapicinestar\\webapicinestar.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B6251733-FB67-B163-3347-84D69FC72936}|WebApiCineStar\\WebApiCineStar.csproj|solutionrelative:webapicinestar\\webapicinestar.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{B6251733-FB67-B163-3347-84D69FC72936}|WebApiCineStar\\WebApiCineStar.csproj|d:\\tarea onpe y cinestar\\webapicinestar\\webapicinestar\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B6251733-FB67-B163-3347-84D69FC72936}|WebApiCineStar\\WebApiCineStar.csproj|solutionrelative:webapicinestar\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6251733-FB67-B163-3347-84D69FC72936}|WebApiCineStar\\WebApiCineStar.csproj|d:\\tarea onpe y cinestar\\webapicinestar\\webapicinestar\\models\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6251733-FB67-B163-3347-84D69FC72936}|WebApiCineStar\\WebApiCineStar.csproj|solutionrelative:webapicinestar\\models\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{669E54A8-A211-D27F-D201-0F519AC8D680}|ConsumirApiCineStarWeb\\ConsumirApiCineStarWeb.csproj|d:\\tarea onpe y cinestar\\webapicinestar\\consumirapicinestarweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{669E54A8-A211-D27F-D201-0F519AC8D680}|ConsumirApiCineStarWeb\\ConsumirApiCineStarWeb.csproj|solutionrelative:consumirapicinestarweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{669E54A8-A211-D27F-D201-0F519AC8D680}|ConsumirApiCineStarWeb\\ConsumirApiCineStarWeb.csproj|d:\\tarea onpe y cinestar\\webapicinestar\\consumirapicinestarweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{669E54A8-A211-D27F-D201-0F519AC8D680}|ConsumirApiCineStarWeb\\ConsumirApiCineStarWeb.csproj|solutionrelative:consumirapicinestarweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{669E54A8-A211-D27F-D201-0F519AC8D680}|ConsumirApiCineStarWeb\\ConsumirApiCineStarWeb.csproj|d:\\tarea onpe y cinestar\\webapicinestar\\consumirapicinestarweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{669E54A8-A211-D27F-D201-0F519AC8D680}|ConsumirApiCineStarWeb\\ConsumirApiCineStarWeb.csproj|solutionrelative:consumirapicinestarweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{669E54A8-A211-D27F-D201-0F519AC8D680}|ConsumirApiCineStarWeb\\ConsumirApiCineStarWeb.csproj|d:\\tarea onpe y cinestar\\webapicinestar\\consumirapicinestarweb\\views\\home\\peliculas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{669E54A8-A211-D27F-D201-0F519AC8D680}|ConsumirApiCineStarWeb\\ConsumirApiCineStarWeb.csproj|solutionrelative:consumirapicinestarweb\\views\\home\\peliculas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6251733-FB67-B163-3347-84D69FC72936}|WebApiCineStar\\WebApiCineStar.csproj|d:\\tarea onpe y cinestar\\webapicinestar\\webapicinestar\\webapicinestar.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B6251733-FB67-B163-3347-84D69FC72936}|WebApiCineStar\\WebApiCineStar.csproj|solutionrelative:webapicinestar\\webapicinestar.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B6251733-FB67-B163-3347-84D69FC72936}|WebApiCineStar\\WebApiCineStar.csproj|d:\\tarea onpe y cinestar\\webapicinestar\\webapicinestar\\webapicinestar.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
@@ -59,10 +59,6 @@
       "RelativeMoniker": "D:0:0:{B6251733-FB67-B163-3347-84D69FC72936}|WebApiCineStar\\WebApiCineStar.csproj|solutionrelative:webapicinestar\\models\\genero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B6251733-FB67-B163-3347-84D69FC72936}|WebApiCineStar\\WebApiCineStar.csproj|d:\\tarea onpe y cinestar\\webapicinestar\\webapicinestar\\models\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6251733-FB67-B163-3347-84D69FC72936}|WebApiCineStar\\WebApiCineStar.csproj|solutionrelative:webapicinestar\\models\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B6251733-FB67-B163-3347-84D69FC72936}|WebApiCineStar\\WebApiCineStar.csproj|d:\\tarea onpe y cinestar\\webapicinestar\\webapicinestar\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B6251733-FB67-B163-3347-84D69FC72936}|WebApiCineStar\\WebApiCineStar.csproj|solutionrelative:webapicinestar\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -83,39 +79,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Peliculas.cshtml",
-              "DocumentMoniker": "D:\\tarea onpe y cinestar\\WebApiCineStar\\ConsumirApiCineStarWeb\\Views\\Home\\Peliculas.cshtml",
-              "RelativeDocumentMoniker": "ConsumirApiCineStarWeb\\Views\\Home\\Peliculas.cshtml",
-              "ToolTip": "D:\\tarea onpe y cinestar\\WebApiCineStar\\ConsumirApiCineStarWeb\\Views\\Home\\Peliculas.cshtml",
-              "RelativeToolTip": "ConsumirApiCineStarWeb\\Views\\Home\\Peliculas.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-22T07:08:02.07Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "WebApiCineStar.csproj",
-              "DocumentMoniker": "D:\\tarea onpe y cinestar\\WebApiCineStar\\WebApiCineStar\\WebApiCineStar.csproj",
-              "RelativeDocumentMoniker": "WebApiCineStar\\WebApiCineStar.csproj",
-              "ToolTip": "D:\\tarea onpe y cinestar\\WebApiCineStar\\WebApiCineStar\\WebApiCineStar.csproj",
-              "RelativeToolTip": "WebApiCineStar\\WebApiCineStar.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-21T21:16:50.214Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\tarea onpe y cinestar\\WebApiCineStar\\ConsumirApiCineStarWeb\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "ConsumirApiCineStarWeb\\Controllers\\HomeController.cs",
               "ToolTip": "D:\\tarea onpe y cinestar\\WebApiCineStar\\ConsumirApiCineStarWeb\\Controllers\\HomeController.cs",
               "RelativeToolTip": "ConsumirApiCineStarWeb\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-21T21:16:44.219Z"
+              "WhenOpened": "2026-03-21T21:16:44.219Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -131,43 +103,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\tarea onpe y cinestar\\WebApiCineStar\\WebApiCineStar\\Program.cs",
               "RelativeDocumentMoniker": "WebApiCineStar\\Program.cs",
               "ToolTip": "D:\\tarea onpe y cinestar\\WebApiCineStar\\WebApiCineStar\\Program.cs",
               "RelativeToolTip": "WebApiCineStar\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-21T19:10:51.148Z"
+              "WhenOpened": "2026-03-21T19:10:51.148Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\tarea onpe y cinestar\\WebApiCineStar\\WebApiCineStar\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "WebApiCineStar\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\tarea onpe y cinestar\\WebApiCineStar\\WebApiCineStar\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "WebApiCineStar\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-21T19:10:39.895Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApiController.cs",
-              "DocumentMoniker": "D:\\tarea onpe y cinestar\\WebApiCineStar\\WebApiCineStar\\Controllers\\ApiController.cs",
-              "RelativeDocumentMoniker": "WebApiCineStar\\Controllers\\ApiController.cs",
-              "ToolTip": "D:\\tarea onpe y cinestar\\WebApiCineStar\\WebApiCineStar\\Controllers\\ApiController.cs",
-              "RelativeToolTip": "WebApiCineStar\\Controllers\\ApiController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-21T19:10:14.602Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\tarea onpe y cinestar\\WebApiCineStar\\WebApiCineStar\\appsettings.json",
               "RelativeDocumentMoniker": "WebApiCineStar\\appsettings.json",
@@ -175,11 +124,49 @@
               "RelativeToolTip": "WebApiCineStar\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-21T19:00:25.073Z"
+              "WhenOpened": "2026-03-21T19:00:25.073Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
+              "Title": "Pelicula.cs",
+              "DocumentMoniker": "D:\\tarea onpe y cinestar\\WebApiCineStar\\WebApiCineStar\\Models\\Pelicula.cs",
+              "RelativeDocumentMoniker": "WebApiCineStar\\Models\\Pelicula.cs",
+              "ToolTip": "D:\\tarea onpe y cinestar\\WebApiCineStar\\WebApiCineStar\\Models\\Pelicula.cs",
+              "RelativeToolTip": "WebApiCineStar\\Models\\Pelicula.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAvwDcAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T19:02:40.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\tarea onpe y cinestar\\WebApiCineStar\\ConsumirApiCineStarWeb\\appsettings.json",
+              "RelativeDocumentMoniker": "ConsumirApiCineStarWeb\\appsettings.json",
+              "ToolTip": "D:\\tarea onpe y cinestar\\WebApiCineStar\\ConsumirApiCineStarWeb\\appsettings.json",
+              "RelativeToolTip": "ConsumirApiCineStarWeb\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-24T02:29:06.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WebApiCineStar.csproj",
+              "DocumentMoniker": "D:\\tarea onpe y cinestar\\WebApiCineStar\\WebApiCineStar\\WebApiCineStar.csproj",
+              "RelativeDocumentMoniker": "WebApiCineStar\\WebApiCineStar.csproj",
+              "ToolTip": "D:\\tarea onpe y cinestar\\WebApiCineStar\\WebApiCineStar\\WebApiCineStar.csproj",
+              "RelativeToolTip": "WebApiCineStar\\WebApiCineStar.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-21T21:16:50.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\tarea onpe y cinestar\\WebApiCineStar\\ConsumirApiCineStarWeb\\Program.cs",
               "RelativeDocumentMoniker": "ConsumirApiCineStarWeb\\Program.cs",
@@ -188,6 +175,18 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-21T21:16:47.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Peliculas.cshtml",
+              "DocumentMoniker": "D:\\tarea onpe y cinestar\\WebApiCineStar\\ConsumirApiCineStarWeb\\Views\\Home\\Peliculas.cshtml",
+              "RelativeDocumentMoniker": "ConsumirApiCineStarWeb\\Views\\Home\\Peliculas.cshtml",
+              "ToolTip": "D:\\tarea onpe y cinestar\\WebApiCineStar\\ConsumirApiCineStarWeb\\Views\\Home\\Peliculas.cshtml",
+              "RelativeToolTip": "ConsumirApiCineStarWeb\\Views\\Home\\Peliculas.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-22T07:08:02.07Z"
             },
             {
               "$type": "Document",
@@ -252,18 +251,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "Pelicula.cs",
-              "DocumentMoniker": "D:\\tarea onpe y cinestar\\WebApiCineStar\\WebApiCineStar\\Models\\Pelicula.cs",
-              "RelativeDocumentMoniker": "WebApiCineStar\\Models\\Pelicula.cs",
-              "ToolTip": "D:\\tarea onpe y cinestar\\WebApiCineStar\\WebApiCineStar\\Models\\Pelicula.cs",
-              "RelativeToolTip": "WebApiCineStar\\Models\\Pelicula.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-21T19:02:40.107Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "D:\\tarea onpe y cinestar\\WebApiCineStar\\WebApiCineStar\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "WebApiCineStar\\Models\\ErrorViewModel.cs",
@@ -275,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "Distrito.cs",
               "DocumentMoniker": "D:\\tarea onpe y cinestar\\WebApiCineStar\\WebApiCineStar\\Models\\Distrito.cs",
               "RelativeDocumentMoniker": "WebApiCineStar\\Models\\Distrito.cs",

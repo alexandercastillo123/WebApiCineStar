@@ -1,35 +1,44 @@
-﻿@model ConsumirApiCineStar.Models.CineViewModel
+@model ConsumirApiCineStarWeb.Models.Pelicula
 @{
-    ViewData["Title"] = Model.PeliculaDetalle?.Titulo;
+    ViewData["Title"] = Model?.Titulo ?? "Detalles de la Película";
 }
 
-<div class="contenido-interno">
-    @if (Model.PeliculaDetalle != null)
-    {
-        <br />
-        <h1>@Model.PeliculaDetalle.Titulo</h1>
+<div class="contenido-interno" id="contenido-interno">
+    <br /><h1>Cartelera</h1><br />
 
-        <br />
-        <div class="contenido-pelicula">
-            <div class="datos-pelicula">
-                <p>@Model.PeliculaDetalle.Sinopsis</p>
-                <br />
-                <div class="tabla">
-                    <div class="fila"><div class="celda-titulo">Título Original:</div><div class="celda">@Model.PeliculaDetalle.Titulo</div></div>
-                    <div class="fila"><div class="celda-titulo">Estreno:</div><div class="celda">@Model.PeliculaDetalle.FechaEstreno</div></div>
-                    <div class="fila"><div class="celda-titulo">Género:</div><div class="celda">@Model.PeliculaDetalle.GenerosTexto</div></div>
-                    <div class="fila"><div class="celda-titulo">Director:</div><div class="celda">@Model.PeliculaDetalle.Director</div></div>
-                    <div class="fila"><div class="celda-titulo">Reparto:</div><div class="celda">@Model.PeliculaDetalle.Reparto</div></div>
+    <div class="contenido-pelicula">
+        <div class="datos-pelicula">
+            <h2>@Model?.Titulo</h2>
+            <p>@Model?.Sinopsis</p>
+            <br />
+            <div class="tabla">
+                <div class="fila">
+                    <div class="celda-titulo">Título Original :</div>
+                    <div class="celda">@Model?.Titulo</div>
+                </div>
+                <div class="fila">
+                    <div class="celda-titulo">Estreno :</div>
+                    <div class="celda">@Model?.FechaEstreno</div>
+                </div>
+                <div class="fila">
+                    <div class="celda-titulo">Género :</div>
+                    <div class="celda">@Model?.Generos</div>
+                </div>
+                <div class="fila">
+                    <div class="celda-titulo">Director :</div>
+                    <div class="celda">@Model?.Director</div>
+                </div>
+                <div class="fila">
+                    <div class="celda-titulo">Reparto :</div>
+                    <div class="celda">@Model?.Reparto</div>
                 </div>
             </div>
-            <img src="~/img/pelicula/@(Model.PeliculaDetalle.Id).jpg" width="160" height="226" />
         </div>
-        <div class="pelicula-video">
-            <embed src="https://www.youtube.com/v/@Model.PeliculaDetalle.Link" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="580" height="400">
-        </div>
-    }
-    else
-    {
-        <p>No se encontró información de la película.</p>
-    }
+        <img src="~/img/pelicula/@(Model?.Id).jpg" width="160" height="226" />
+        <div style="clear: both;"></div>
+    </div>
+    
+    <div class="pelicula-video">
+        <embed src="https://www.youtube.com/v/@Model?.Link" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="580" height="400">
+    </div>
 </div>

@@ -1,81 +1,79 @@
-using ConsumirApiCineStar.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Net.Http;
 using System.Text.Json;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+using ConsumirApiCineStarWeb.Models;
 
 namespace ConsumirApiCineStarWeb.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IHttpClientFactory _httpClientFactory;
-        private readonly string _baseUrl = "https://localhost:7179/api/api/";
+        private readonly HttpClient _httpClient;
+        private readonly string _apiBaseUrl = "https://localhost:7179/api/";
 
-        public HomeController(IHttpClientFactory httpClientFactory)
+        public HomeController()
         {
-            _httpClientFactory = httpClientFactory;
+            var handler = new HttpClientHandler
+            {
+                ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true
+            };
+            _httpClient = new HttpClient(handler);
+            _httpClient.BaseAddress = new System.Uri(_apiBaseUrl);
         }
 
-        public IActionResult Index() => View(new CineViewModel());
-
-        public async Task<IActionResult> Peliculas(int id = 1)
+        public IActionResult Index()
         {
-            ViewBag.Titulo = (id == 1) ? "Cartelera" : "Próximos Estrenos";
-            var client = _httpClientFactory.CreateClient();
-            var response = await client.GetAsync($"{_baseUrl}peliculas/{id}");
-
-            if (response.IsSuccessStatusCode)
-            {
-                var json = await response.Content.ReadAsStringAsync();
-                var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
-                var list = JsonSerializer.Deserialize<List<Pelicula>>(json, options);
-                return View(new CineViewModel { PeliculasCartelera = list ?? new() });
-            }
-            return View(new CineViewModel());
-        }
-
-        public async Task<IActionResult> Pelicula(int id)
-        {
-            var client = _httpClientFactory.CreateClient();
-            var response = await client.GetAsync($"{_baseUrl}pelicula/{id}");
-
-            if (response.IsSuccessStatusCode)
-            {
-                var json = await response.Content.ReadAsStringAsync();
-                var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
-                var pelicula = JsonSerializer.Deserialize<Pelicula>(json, options);
-                return View(new CineViewModel { PeliculaDetalle = pelicula });
-            }
-            return RedirectToAction("Index");
+            return View();
         }
 
         public async Task<IActionResult> Cines()
         {
-            var client = _httpClientFactory.CreateClient();
-            var response = await client.GetAsync($"{_baseUrl}cines");
-
+            var response = await _httpClient.GetAsync("Cine/verCines");
             if (response.IsSuccessStatusCode)
             {
                 var json = await response.Content.ReadAsStringAsync();
-                var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
-                var list = JsonSerializer.Deserialize<List<Cine>>(json, options);
-                return View(new CineViewModel { Cines = list ?? new() });
+                var cines = JsonSerializer.Deserialize<List<Cine>>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                return View(cines);
             }
-            return View(new CineViewModel());
+            return View(new List<Cine>());
         }
 
         public async Task<IActionResult> Cine(int id)
         {
-            var client = _httpClientFactory.CreateClient();
-            var response = await client.GetAsync($"{_baseUrl}cine/{id}");
-
+            var response = await _httpClient.GetAsync($"Cine/verCine/{id}");
             if (response.IsSuccessStatusCode)
             {
                 var json = await response.Content.ReadAsStringAsync();
-                var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
-                var model = JsonSerializer.Deserialize<CineViewModel>(json, options);
-                return View(model);
+                var cine = JsonSerializer.Deserialize<Cine>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                return View(cine);
             }
-            return RedirectToAction("Cines");
+            return View(new Cine());
+        }
+
+        public async Task<IActionResult> Peliculas(int id)
+        {
+            var response = await _httpClient.GetAsync($"Pelicula/verPeliculas/{id}");
+            if (response.IsSuccessStatusCode)
+            {
+                var json = await response.Content.ReadAsStringAsync();
+                var peliculas = JsonSerializer.Deserialize<List<Pelicula>>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                return View(peliculas);
+            }
+            return View(new List<Pelicula>());
+        }
+
+        public async Task<IActionResult> Pelicula(int id)
+        {
+            var response = await _httpClient.GetAsync($"Pelicula/verPelicula/{id}");
+            if (response.IsSuccessStatusCode)
+            {
+                var json = await response.Content.ReadAsStringAsync();
+                var pelicula = JsonSerializer.Deserialize<Pelicula>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                return View(pelicula);
+            }
+            return View(new Pelicula());
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

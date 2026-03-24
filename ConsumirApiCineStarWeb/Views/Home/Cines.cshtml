@@ -1,12 +1,12 @@
-﻿@model ConsumirApiCineStar.Models.CineViewModel
+@model List<ConsumirApiCineStarWeb.Models.Cine>
 @{
     ViewData["Title"] = "Nuestros Cines";
 }
 
 <div class="contenido-interno">
     <br /><h1>Nuestros Cines</h1><br />
-
-    @foreach (var cine in Model.Cines)
+        
+    @foreach (var cine in Model)
     {
         <div class="contenido-cine">
             <img src="~/img/cine/@(cine.Id).1.jpg" width="227" height="170" />
@@ -15,7 +15,7 @@
                 <h4>@cine.RazonSocial</h4>
                 <br />
                 <span>
-                    @cine.Direccion<br />
+                    @cine.Direccion<br /><br />
                     Teléfono: @cine.Telefonos
                 </span>
             </div>
@@ -23,9 +23,7 @@
             <a asp-action="Cine" asp-route-id="@cine.Id">
                 <img src="~/img/varios/ico-info2.png" width="150" height="40" />
             </a>
-            
-            <div style="clear: both;"></div>
         </div>
-        <br />
     }
+    <div style="clear: both;"></div>
 </div>

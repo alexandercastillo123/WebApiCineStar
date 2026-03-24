@@ -64,3 +64,4 @@ D:\tarea onpe y cinestar\WebApiCineStar\WebApiCineStar\obj\Debug\net10.0\refint\
 D:\tarea onpe y cinestar\WebApiCineStar\WebApiCineStar\obj\Debug\net10.0\WebApiCineStar.pdb
 D:\tarea onpe y cinestar\WebApiCineStar\WebApiCineStar\obj\Debug\net10.0\WebApiCineStar.genruntimeconfig.cache
 D:\tarea onpe y cinestar\WebApiCineStar\WebApiCineStar\obj\Debug\net10.0\ref\WebApiCineStar.dll
+D:\tarea onpe y cinestar\WebApiCineStar\WebApiCineStar\obj\Debug\net10.0\WebApiCineStar.sourcelink.json

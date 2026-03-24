@@ -1,17 +1,16 @@
-﻿@model ConsumirApiCineStar.Models.CineViewModel
+@model List<ConsumirApiCineStarWeb.Models.Pelicula>
 @{
-    ViewData["Title"] = ViewBag.Titulo;
+    ViewData["Title"] = "Cartelera";
 }
 
 <div class="contenido-interno">
-    <br /><h1>@ViewBag.Titulo</h1><br />
-    
-    @foreach (var p in Model.PeliculasCartelera)
+    <br /><h1>Cartelera</h1><br />
+
+    @foreach (var p in Model)
     {
         <div class="contenido-pelicula">
-            <img src="~/img/pelicula/@(p.Id).jpg" width="160" height="226" align="left" style="margin-right: 20px;" />
             <div class="datos-pelicula">
-                <h2>@p.Titulo</h2>
+                <h2>@p.Titulo</h2><br />
                 <p>@p.Sinopsis</p>
                 <br />
                 <div class="boton-pelicula">
@@ -20,11 +19,12 @@
                     </a>
                 </div>
                 <div class="boton-pelicula">
-                    <a href="https://www.youtube.com/watch?v=@p.Link" target="_blank">
+                    <a href="https://www.youtube.com/v/@p.Link" target=_blank onclick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
                         <img src="~/img/varios/btn-trailer.jpg" width="120" height="30" />
                     </a>
                 </div>
             </div>
+            <img src="~/img/pelicula/@(p.Id).jpg" width="160" height="226" />
             <div style="clear: both;"></div>
         </div>
         <br />

@@ -14,11 +14,12 @@ namespace WebApiCineStar.Controllers.bd
 
         public clsBD(string connectionName)
         {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+            IConfiguration configuration = new ConfigurationBuilder()
+                .SetBasePath(AppContext.BaseDirectory)
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .AddEnvironmentVariables()
+                .Build();
             
-            var configuration = builder.Build();
             string connectionString = configuration.GetConnectionString("DefaultConnection") ?? "";
             
             cn = new NpgsqlConnection(connectionString);

@@ -11,14 +11,14 @@ namespace WebApiCineStar.Controllers.dao
         internal Pelicula? getPelicula(int id)
         {
             clsBD.Sentencia("sp_getPelicula");
-            clsBD.Parametro("@id", id);
+            clsBD.Parametro("@p_id", id);
             return new Pelicula().getRegistro(clsBD.getDataTable());
         }
 
         internal List<Pelicula> getPeliculas(int id)
         {
             clsBD.Sentencia("sp_getPeliculas");
-            clsBD.Parametro("@idEstado", id);
+            clsBD.Parametro("@p_idEstado", id);
             return new Pelicula().getList(clsBD.getDataTable());
         }
     }

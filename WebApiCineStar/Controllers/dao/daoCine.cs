@@ -11,17 +11,17 @@ namespace WebApiCineStar.Controllers.dao
         internal Cine? getCine(int idCine)
         {
             clsBD.Sentencia("sp_getCine");
-            clsBD.Parametro("@id", idCine);
+            clsBD.Parametro("@p_id", idCine);
             Cine? cine = new Cine().getRegistro(clsBD.getDataTable());
 
             if (cine != null)
             {
                 clsBD.Sentencia("sp_getCineTarifas");
-                clsBD.Parametro("@idCine", idCine);
+                clsBD.Parametro("@p_id", idCine);
                 cine.Tarifas = new CineTarifa().getList(clsBD.getDataTable());
 
                 clsBD.Sentencia("sp_getCinePeliculas");
-                clsBD.Parametro("@idCine", idCine);
+                clsBD.Parametro("@p_idCine", idCine);
                 cine.Horarios = new CinePelicula().getList(clsBD.getDataTable());
             }
 

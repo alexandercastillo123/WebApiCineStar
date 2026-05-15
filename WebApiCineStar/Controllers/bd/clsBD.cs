@@ -1,6 +1,6 @@
 using System;
 using System.Data;
-using Microsoft.Data.SqlClient;
+using Npgsql;
 using Microsoft.Extensions.Configuration;
 using System.IO;
 
@@ -8,9 +8,9 @@ namespace WebApiCineStar.Controllers.bd
 {
     public class clsBD
     {
-        private SqlConnection? cn = null;
-        private SqlCommand? cmd = null;
-        private SqlDataAdapter? da = null;
+        private NpgsqlConnection? cn = null;
+        private NpgsqlCommand? cmd = null;
+        private NpgsqlDataAdapter? da = null;
 
         public clsBD(string connectionName)
         {
@@ -21,15 +21,17 @@ namespace WebApiCineStar.Controllers.bd
             var configuration = builder.Build();
             string connectionString = configuration.GetConnectionString("DefaultConnection") ?? "";
             
-            cn = new SqlConnection(connectionString);
+            cn = new NpgsqlConnection(connectionString);
         }
 
         public void Sentencia(string sp)
         {
             if (cn != null)
             {
-                cmd = new SqlCommand(sp, cn);
-                cmd.CommandType = CommandType.StoredProcedure;
+                // En PostgreSQL, las funciones que retornan tablas se deben llamar con SELECT * FROM nombre_funcion(...)
+                // Para simplificar, usaremos CommandType.Text y construiremos la llamada.
+                cmd = new NpgsqlCommand("SELECT * FROM " + sp + "()", cn);
+                cmd.CommandType = CommandType.Text;
             }
         }
 
@@ -37,7 +39,26 @@ namespace WebApiCineStar.Controllers.bd
         {
             if (cmd != null)
             {
-                cmd.Parameters.AddWithValue(parameterName, parameterValue);
+                // PostgreSQL no usa @ para los parámetros en el cuerpo de la función, pero Npgsql sí lo soporta en el comando.
+                // Sin embargo, para que funcione con SELECT * FROM sp(), debemos asegurar que el comando reconozca los argumentos.
+                
+                // Quitamos el @ si viene en el nombre para manejarlo uniformemente
+                string cleanName = parameterName.StartsWith("@") ? parameterName.Substring(1) : parameterName;
+                
+                // Agregamos el parámetro a la colección
+                cmd.Parameters.AddWithValue(cleanName, parameterValue);
+
+                // Actualizamos el CommandText para incluir los parámetros en la llamada
+                // Ejemplo: cambia "SELECT * FROM sp()" a "SELECT * FROM sp(p1 => @p1, p2 => @p2)"
+                string paramRef = cleanName + " := @" + cleanName;
+                if (cmd.CommandText.EndsWith("()"))
+                {
+                    cmd.CommandText = cmd.CommandText.Replace("()", "(" + paramRef + ")");
+                }
+                else
+                {
+                    cmd.CommandText = cmd.CommandText.Replace(")", ", " + paramRef + ")");
+                }
             }
         }
 
@@ -46,7 +67,7 @@ namespace WebApiCineStar.Controllers.bd
             DataTable dt = new DataTable();
             if (cmd != null)
             {
-                da = new SqlDataAdapter(cmd);
+                da = new NpgsqlDataAdapter(cmd);
                 da.Fill(dt);
             }
             return dt;
